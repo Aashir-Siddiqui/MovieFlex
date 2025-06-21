@@ -1,9 +1,14 @@
 import React from 'react';
-import { useRouteError, NavLink } from 'react-router-dom';
+import { useRouteError, NavLink, useNavigate } from 'react-router-dom';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 export default function Error() {
     const error = useRouteError();
+    const navigate = useNavigate()
+
+    const handleNavigate = () => {
+        navigate(-1)
+    }
 
     return (
         <div className="min-h-screen flex flex-col items-center justify-center bg-white">
@@ -20,7 +25,10 @@ export default function Error() {
                     <p className="text-lg text-gray-700 mt-2">{error.statusText || error.message}</p>
                 </div>
             )}
-            <NavLink to="/" className={'py-4 px-12 bg-yellow-400 hover:bg-black text-black hover:text-yellow-400 duration-300 mt-8 rounded-sm text-lg'}>Go to home page</NavLink>
+            <div className="flex items-center gap-8">
+                <button className={'py-3 px-6 bg-[#ffc400] hover:bg-[#102e35] text-[#102e35] hover:text-[#ffc400] duration-300 mt-8 rounded-sm text-lg'} onClick={handleNavigate}>Go Back</button>
+                <NavLink to="/" className={'py-3 px-6 bg-[#ffc400] hover:bg-[#102e35] text-[#102e35] hover:text-[#ffc400] duration-300 mt-8 rounded-sm text-lg'}>Go to home page</NavLink>
+            </div>
         </div>
     );
 }
