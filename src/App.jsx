@@ -8,6 +8,7 @@ import About from './components/pages/About';
 import Movie from './components/pages/Movie';
 import AppLayout from './components/layout/AppLayout';
 import Error from './components/pages/Error';
+import { GetMoviesData } from './api/GetMoviesdata';
 
 function App() {
   const router = createBrowserRouter([
@@ -26,7 +27,8 @@ function App() {
         },
         {
           path: '/movie',
-          element: <Movie />
+          element: <Movie />,
+          loader: GetMoviesData,
         }
       ]
     }
