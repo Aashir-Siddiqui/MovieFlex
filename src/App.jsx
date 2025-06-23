@@ -4,7 +4,6 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from './components/pages/Home';
-import About from './components/pages/About';
 import Movie from './components/pages/Movie';
 import AppLayout from './components/layout/AppLayout';
 import Error from './components/pages/Error';
@@ -22,10 +21,6 @@ function App() {
         {
           path: '/',
           element: <Home />
-        },
-        {
-          path: '/about',
-          element: <About />
         },
         {
           path: '/movie',
