@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Clapperboard } from '../../../public/Clapperboard';
+import { Clapperboard } from '/src/components/Clapperboard';
 import { FaInstagram, FaGithub, FaFacebookF } from "react-icons/fa";
 
 export default function Footer() {

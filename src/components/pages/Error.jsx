@@ -11,7 +11,6 @@ export default function Error() {
         navigate(-1);
     };
 
-    // Animation variants
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: { opacity: 1, transition: { duration: 0.5 } },
@@ -32,7 +31,7 @@ export default function Error() {
             {error.status === 404 ? (
                 <motion.div variants={itemVariants} transition={{ delay: 0.2 }}>
                     <DotLottieReact
-                        src="/public/404-animation.lottie"
+                        src="/404-animation.lottie"
                         loop
                         autoplay
                         className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96"

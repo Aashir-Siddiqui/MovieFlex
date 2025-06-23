@@ -5,7 +5,6 @@ import { FaMasksTheater } from "react-icons/fa6";
 
 export default function MovieDetails() {
     const movieData = useLoaderData()
-    console.log(movieData)
 
     const { Actors, Awards, BoxOffice, Country, Director, Genre, Language, Plot, Poster, Released, Runtime, Title, Type, Writer, imdbRating, imdbVotes, imdbID, Year } = movieData
 
@@ -111,7 +110,7 @@ export default function MovieDetails() {
                                     className={index % 2 === 0 ? 'bg-gray-200' : 'bg-white'}
                                 >
                                     <td className="py-3 px-6 text-black flex items-center gap-2">
-                                        <FaMasksTheater className="text-[28px]"/>
+                                        <FaMasksTheater className="text-[28px]" />
                                         {actor}
                                     </td>
                                 </tr>

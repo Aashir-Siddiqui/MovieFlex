@@ -7,12 +7,11 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 export default function AppLayout() {
     const navigation = useNavigation()
-    console.log(navigation)
 
     if (navigation.state === 'loading') return (
         <div className="flex justify-center items-center min-h-screen bg-gray-100">
             <DotLottieReact
-                src="/public/loader.lottie"
+                src="/loader.lottie"
                 loop
                 autoplay
                 className="w-40 h-40 sm:w-60 sm:h-60"

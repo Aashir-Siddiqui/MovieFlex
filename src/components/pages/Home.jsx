@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ClapperExplore } from '../../../public/ClapperExplore';
+import { ClapperExplore } from '/src/components/ClapperExplore';
 
 export default function Home() {
   const heroVariants = {
@@ -12,13 +12,14 @@ export default function Home() {
   return (
     <div className="relative min-h-screen">
       <motion.img
-        src="/public/hero-img.jpg"
+        src="/hero-img.jpg"
         alt="MovieFlex Hero"
         className="w-full h-screen object-cover"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       />
+
 
       <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center text-white px-4">
         <motion.h1

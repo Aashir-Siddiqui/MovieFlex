@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 import { BiSolidCameraMovie } from "react-icons/bi";
 
 export default function Card({ currMovie }) {
-  console.log(currMovie)
   const { Poster, Title, Year, Type, imdbID } = currMovie;
 
   return (

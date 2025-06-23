@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { Clapperboard } from '../../../public/Clapperboard';
+import { Clapperboard } from '/src/components/Clapperboard';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
