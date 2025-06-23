@@ -7,7 +7,7 @@ export default function Movie() {
   console.log(moviesData);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-6 container mx-auto">
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 p-6 container mx-auto">
       {moviesData.Search.map((currMovie) => (
         <Cards key={currMovie.imdbID} currMovie={currMovie} />
       ))}
