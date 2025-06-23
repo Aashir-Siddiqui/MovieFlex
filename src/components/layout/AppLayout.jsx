@@ -12,10 +12,10 @@ export default function AppLayout() {
     if (navigation.state === 'loading') return (
         <div className="flex justify-center items-center min-h-screen bg-gray-100">
             <DotLottieReact
-                src="/src/assets/loader.lottie"
+                src="/public/loader.lottie"
                 loop
                 autoplay
-                className="w-24 h-24 md:w-32 md:h-32"
+                className="w-40 h-40 sm:w-60 sm:h-60"
             />
         </div>
     )
